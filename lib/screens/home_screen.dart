@@ -14,7 +14,7 @@ class HomeScreen extends StatelessWidget {
       ),
       body: ListView.separated(itemBuilder: (context,index)=>ListTile(
         leading:const Icon(Icons.abc_outlined),
-        title:const Text('+'),
+        title:const Text('Nombre de la ruta'),
         onTap: (){
           Navigator.pushNamed(context, 'card');
         }
