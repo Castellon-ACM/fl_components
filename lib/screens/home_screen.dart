@@ -1,3 +1,4 @@
+import 'package:fl_components/screens/listView1_screen.dart';
 import 'package:flutter/material.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -10,13 +11,12 @@ class HomeScreen extends StatelessWidget {
       appBar: AppBar(
         title: const Text('Componentes de flutter'),
         backgroundColor: Colors.cyan,
-        
       ),
       body: ListView.separated(itemBuilder: (context,index)=>ListTile(
         leading:const Icon(Icons.abc_outlined),
-        title:const Text('Nombre de ruta'),
+        title:const Text('+'),
         onTap: (){
-
+          Navigator.pushNamed(context, 'card');
         }
         ), 
       separatorBuilder: (context,index) => const Divider(), 
