@@ -11,7 +11,7 @@ class HomeScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Componentes de flutter'),
-        backgroundColor: Colors.cyan,
+        //backgroundColor: Colors.cyan,
       ),
       body: ListView.separated(itemBuilder: (context,index)=>ListTile(
         leading: Icon(AppRoutes.MenuOptions[index].icon),

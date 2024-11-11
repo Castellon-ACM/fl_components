@@ -15,22 +15,22 @@ static final MenuOptions = <MenuOption>[
     route: 'listview1',
     icon: Icons.list_alt_outlined,
     name: 'ListView tipo 1',
-    screen: const HomeScreen()),
+    screen: const Listview1Screen()),
      MenuOption(
     route: 'listview2',
     icon: Icons.list_alt_rounded,
     name: 'ListView tipo 2',
-    screen: const HomeScreen()),
+    screen: const Listview2Screen()),
      MenuOption(
     route: 'alert',
     icon: Icons.warning,
     name: 'Alert',
-    screen: const HomeScreen()),
+    screen: const AlertScreen()),
      MenuOption(
     route: 'card',
     icon: Icons.card_giftcard,
     name: 'Cards',
-    screen: const HomeScreen())
+    screen: const CardScreen())
 ];
 
   static Map<String, Widget Function(BuildContext)> getAppRoutes(){
