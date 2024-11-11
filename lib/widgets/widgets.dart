@@ -1,0 +1,1 @@
+export 'package:fl_components/widgets/CustomCardTipo1.dart';
