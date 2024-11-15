@@ -22,11 +22,14 @@ class CustomCardTipo2 extends StatelessWidget {
             //fit: BoxFit.cover,
             fadeInDuration: const Duration(milliseconds: 2000),
             ),
+
+            if(titulo != null)
+            
             Container(
               alignment: AlignmentDirectional.centerEnd,
             padding: const EdgeInsets.only( top: 10, bottom: 10, right: 20),
             child: 
-            Text(titulo ?? 'Desconocido'))
+            Text(titulo ?? ''))
         ],
       ),
     );
