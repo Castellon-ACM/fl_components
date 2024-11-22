@@ -1,15 +1,16 @@
-
 import 'package:fl_components/widgets/widgets.dart';
 import 'package:flutter/material.dart';
 
 class DetailScreen extends StatelessWidget {
   final String widgetTitle;
   final String widgetImage;
+  final String widgetDescription;
 
   const DetailScreen({
     Key? key,
     required this.widgetTitle,
     required this.widgetImage,
+    required this.widgetDescription,
   }) : super(key: key);
 
   @override
@@ -22,7 +23,7 @@ class DetailScreen extends StatelessWidget {
         child: CustomCardDetail(
           imageUrl: widgetImage,
           title: widgetTitle,
-          description: "Esta es una descripción sobre $widgetTitle.",
+          description: widgetDescription,
         ),
       ),
       floatingActionButton: FloatingActionButton(
@@ -32,3 +33,4 @@ class DetailScreen extends StatelessWidget {
     );
   }
 }
+
