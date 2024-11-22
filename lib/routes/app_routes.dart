@@ -30,7 +30,8 @@ static final MenuOptions = <MenuOption>[
     route: 'card',
     icon: Icons.card_giftcard,
     name: 'Cards',
-    screen: const CardScreen())
+    screen: const CardScreen()),
+    
 ];
 
   static Map<String, Widget Function(BuildContext)> getAppRoutes(){
