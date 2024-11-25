@@ -23,6 +23,14 @@ class AppTheme {
             foregroundColor: Color.fromARGB(255, 255, 255, 255),
             elevation: 5,
             shape: StadiumBorder()
+          ),
+          elevatedButtonTheme: ElevatedButtonThemeData(
+            style: ElevatedButton.styleFrom(
+            backgroundColor: primary,
+            foregroundColor: const Color.fromARGB(255, 255, 255, 255),
+            elevation: 5,
+            shape: const StadiumBorder()
+            )
           )
         );
 }
