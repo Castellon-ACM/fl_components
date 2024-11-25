@@ -6,11 +6,13 @@ class AlertScreen extends StatelessWidget {
   
 void displayDialog(BuildContext context){
     showDialog(
+      barrierDismissible: false,
       context: context, 
       builder: ( context ){
-        return const AlertDialog(
-          title: Text('Alerta'),
-          content: Column(
+        return AlertDialog(
+          title: const Text('Alerta'),
+          shape: RoundedRectangleBorder(borderRadius: BorderRadiusDirectional.circular(35)),
+          content: const Column(
             mainAxisSize: MainAxisSize.min,
             children: [
               Text('Error 404, share more information in https://www.milanuncios.com/cabras/cabras-530294037.htm'),
@@ -18,7 +20,11 @@ void displayDialog(BuildContext context){
               FlutterLogo( size: 100)
             ],
           ),
-          
+          actions: [
+            TextButton(
+              onPressed: () => Navigator.pop(context),
+              child: const Text('Cerrar'))
+          ],
         );
       }
       );

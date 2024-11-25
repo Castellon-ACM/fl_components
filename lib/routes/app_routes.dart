@@ -31,6 +31,11 @@ static final MenuOptions = <MenuOption>[
     icon: Icons.card_giftcard,
     name: 'Cards',
     screen: const CardScreen()),
+     MenuOption(
+    route: 'avatar',
+    icon: Icons.person,
+    name: 'Avatar',
+    screen: const AvatarScreen()),
     
 ];
 
